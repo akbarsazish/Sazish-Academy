@@ -1,0 +1,23 @@
+{
+  "name": "sazish-academy",
+  "version": "1.0.0",
+  "description": "Sazish Academy: Online platform for web development and programming. Learn HTML, CSS, JavaScript, PHP, ASP.NET, and more. Front-end, back-end, mobile app, and web design tutorials. Build dynamic websites and enhance coding skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
+    "hint": "^7.1.8",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
