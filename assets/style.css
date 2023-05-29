@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.header {
+   background-color: red;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.nav-menu {
+ background-color: rebeccapurple;
+ display: grid;
+ grid-template-columns: auto auto auto auto auto auto;
+ grid-column-gap: 10px;
+}
+
+.nav-item {
+  justify-self: end;
+}
+
+.logo {
+  max-width: 18%;
+}
