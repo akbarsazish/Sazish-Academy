@@ -96,8 +96,8 @@ a.nav-link:hover {
 
 .hamburger {
   cursor: pointer;
-  margin-top: 10px;
-  justify-self: start;
+  margin: 10px 2px 1px 11px;
+  float: left;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -130,7 +130,7 @@ a.nav-link:hover {
 }
 
 .welcome-info {
-  padding: 5%;
+  padding: 4%;
   color: var(--secondary-color)
 }
 
@@ -237,6 +237,10 @@ a.nav-link:hover {
     cursor: pointer;
   }
 
+  .welcome-info {
+    padding: 5% 10%;
+  }
+  
   .academy-goal {
     padding: 2%;
     width: 54%;
