@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root {
+  --primary-color: #d3d3d3;
+  --secondary-color: #ec5242;
+  --thirenary-color: #272a31;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,25 +22,225 @@ body {
 }
 
 .header {
-   background-color: red;
+   background-color: var(--primary-color);
+   height: 70px;
+   padding: 10px;
 }
 
-.navbar {
+
+.top-nave{
   display: grid;
-  grid-template-columns: 200px 1fr;
 }
 
 .nav-menu {
- background-color: rebeccapurple;
- display: grid;
- grid-template-columns: auto auto auto auto auto auto;
- grid-column-gap: 10px;
+  display: flex;
+  gap: 33px;
+  display: none;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  justify-content: flex-start;
+  align-items: flex-start;
+  animation-name: fadein;
+  animation-duration: 0.4s;
+  color: blue;
 }
 
 .nav-item {
-  justify-self: end;
+  list-style-type: none;
 }
 
-.logo {
-  max-width: 18%;
+.nav-item {
+  list-style-type: none;
+  margin-top: 11px;
+  gap: 20px;
+}
+
+a.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  color: #344563;
+  font-size: 1.8em;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+a.nav-link:hover {
+  color: var(--secondary-color)
+}
+
+.logo-brand {
+  width: 66px;
+  height: 66px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--thirenary-color);
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-top: 10px;
+  justify-self: start;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: var(--secondary-color);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: var(--secondary-color);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.welcome {
+  background-image: url("images/main-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.welcome-info {
+  padding: 5%;
+  color: var(--secondary-color)
+}
+
+.welcome-text {
+  display: block;
+}
+
+.big-text {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1.3em;
+}
+
+.academy-goal {
+  padding: 2%;
+  width: 98%;
+  border: 3px solid white;
+  background-color: #f7f7f8;
+  border-radius: 5px;
+  color: #000;
+  margin-top: 25px;
+}
+
+.location-time {
+  margin-top: 20px;
+}
+
+.time {
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1em;
+  color: #000;
+  margin-top: 20px;
+}
+
+.location {
+  color: #000;
+}
+
+.logo-link, .signUp {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+ .top-nave{
+    grid-template-columns:  1fr 3fr 1fr;
+  }
+  
+  a.nav-link {
+    font-size: 1em;
+  }
+
+  .logo-link {
+    display: grid;
+    justify-items: end !important;
+    font-size: 40px;
+    letter-spacing: -2.8px;
+    word-spacing: 2px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-shadow: var(--secondary-color) 1px 0px 11px;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .logo-link:hover {
+    color: var(--secondary-color);
+    text-shadow: var(--thirnary-color) 1px 0px 11px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-self: end;
+  }
+
+  .signUp {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid var(--secondary-color);
+    padding: 5px 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    width: 99px;
+    height: 38px;
+    background-color: var(--primary-color);
+    margin-top: 5px;
+  }
+
+  .signUp:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+  }
+
+  .academy-goal {
+    padding: 2%;
+    width: 54%;
+
+  }
+  
 }
