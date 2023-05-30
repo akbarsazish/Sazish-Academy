@@ -168,6 +168,7 @@ a.nav-link:hover {
 
 .location {
   color: #000;
+  padding-bottom: 33px;
 }
 
 .logo-link, .signUp {
@@ -183,19 +184,58 @@ a.nav-link:hover {
   background-size: cover;
 }
 
-.main-program {
-  text-align: center;
-}
-
 .program-container {
   display: flex;
-  width: 80%;
-  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 22px;
+}
+
+.main-program-title {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.horizontal-line {
+  width: 9%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  display: flex;
+  margin: 0 auto;
 }
 
 .program-item {
-  width: 20%;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  background-color: rgb(255 255 255 / 10%);
+  padding: 2%;
+  margin: 5px;
 }
+
+.program-img {
+  width: 50px;
+}
+
+.program-title {
+  width: 25%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding-top:20px;
+  text-align: center;
+}
+
+.pro-description {
+  width: 58%;
+  font-size: 0.8em;
+  margin: 5px;
+  text-align: justify;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -268,7 +308,5 @@ a.nav-link:hover {
   .academy-goal {
     padding: 2%;
     width: 54%;
-
   }
-  
 }
