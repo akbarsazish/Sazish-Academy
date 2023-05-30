@@ -67,22 +67,29 @@ const speakerData = [
 
 const speakerContainer = document.getElementById('speaker-container');
 function generateSpeakerCard() {
+
+ 
+
   speakerContainer.innerHTML = speakerData.map((speakerObj) => {
+
+
+
     return `
         <div class="speaker-items" id="${speakerObj.id}">
-        <div class="speak-img">
-              <img class="speaker-image" src="${speakerObj.img}" alt="">
-        </div>
-        <div class="speaker-info">
-            <h3>${speakerObj.name}</h3>
-            <span class="position">${speakerObj.title}</span>
-            <div class="line-container"></div>
-            <p class="speaker-bio">${speakerObj.bio}</p>
-        </div>
-        
+            <div class="speak-img">
+                  <img class="speaker-image" src="${speakerObj.img}" alt="">
+            </div>
+            <div class="speaker-info">
+                <h3>${speakerObj.name}</h3>
+                <span class="position">${speakerObj.title}</span>
+                <div class="line-container"></div>
+                <p class="speaker-bio">${speakerObj.bio}</p>
+            </div>
         </div>
         `;
   }).join('');
 }
+
+
 
 generateSpeakerCard();

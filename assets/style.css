@@ -136,6 +136,7 @@ a.nav-link:hover {
 
 .welcome-text {
   display: block;
+  margin: 11px 5px;
 }
 
 .big-text {
@@ -175,8 +176,21 @@ a.nav-link:hover {
   display: none;
 }
 
-/* main program styles strt */
+.about-welcome {
+  text-align: center;
+}
 
+.about-welcome {
+  background: url("images/about.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color)
+}
+
+
+
+/* main program styles strt */
 .main-program {
   background-image: url("images/main-program-img.PNG");
   background-repeat: no-repeat;
@@ -315,8 +329,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--base-color);
   background-color: var(--thirenary-color);
+  padding: 2%;
 }
 
 .partners-container {
@@ -324,11 +338,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2%;
 }
 
 .footer-partners {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -343,6 +356,8 @@ footer {
   display: flex;
   gap: 20px;
   padding: 2%;
+  width: 82%;
+  margin: 0 auto;
 }
 
 .copyright-text {
@@ -364,6 +379,16 @@ footer {
   display: none;
 }
 
+.speaker-toggle {
+  display: none;
+}
+
+.toggleButton {
+  display: block;
+  width: 98%;
+  padding: 10px 15px;
+  margin-top: 22px;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -396,7 +421,7 @@ footer {
     text-shadow: var(--thirnary-color) 1px 0px 11px;
   }
 
-  .hamburger, button.join {
+  .hamburger, button.join, .toggleButton{
     display: none;
   }
   
@@ -505,5 +530,10 @@ footer {
   .footer-partners img {
     width: 100px;
   }
+
+.copyright-container,
+footer {
+  display: flex;
+}
 
 }
