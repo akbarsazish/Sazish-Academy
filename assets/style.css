@@ -171,7 +171,7 @@ a.nav-link:hover {
   padding-bottom: 33px;
 }
 
-.logo-link, .signUp {
+.logo-link, .signUp, .see-all-program  {
   display: none;
 }
 
@@ -193,7 +193,7 @@ a.nav-link:hover {
 }
 
 .main-program-title {
-  padding: 10px;
+  padding: 40px 5px 5px 5px;
   text-align: center;
   color: #fff;
 }
@@ -215,6 +215,11 @@ a.nav-link:hover {
   margin: 5px;
 }
 
+.program-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+ }
+ 
+
 .program-img {
   width: 50px;
 }
@@ -232,8 +237,25 @@ a.nav-link:hover {
   width: 58%;
   font-size: 0.8em;
   margin: 5px;
-  text-align: justify;
+  text-align: center;
 }
+
+.main-program-link {
+  padding: 33px 5px;
+}
+
+
+button.join {
+  border: none;
+  color: white;
+  margin: 0 auto;
+  padding: 22px 33px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  display: grid;
+
+}
+
 
 
 
@@ -269,7 +291,7 @@ a.nav-link:hover {
     text-shadow: var(--thirnary-color) 1px 0px 11px;
   }
 
-  .hamburger {
+  .hamburger, button.join {
     display: none;
   }
   
@@ -309,4 +331,46 @@ a.nav-link:hover {
     padding: 2%;
     width: 54%;
   }
+
+  .program-container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    padding: 1px;
+    margin-top: 33px;
+    width: 82%;
+   
+  }
+
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .program-img {
+    width: 66px;
+  }
+
+  .program-title {
+    width: 98%;
+  }
+  
+  .pro-description {
+    width: 98%;
+  }
+
+  a.see-all-program {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+ 
+  }
+  .see-all {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+
 }
