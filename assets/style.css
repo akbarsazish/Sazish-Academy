@@ -221,7 +221,7 @@ a.nav-link:hover {
  
 
 .program-img {
-  width: 50px;
+  width: 60px;
 }
 
 .program-title {
@@ -253,11 +253,116 @@ button.join {
   cursor: pointer;
   background-color: var(--secondary-color);
   display: grid;
-
 }
 
+.speakers {
+  padding: 3%;
+}
 
+.speaker-container {
+  display: grid;
+  grid-template-columns: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
+.speaker-items{
+  display: flex;
+  justify-content: space-between;
+  margin: 33px 1px 1px 1px;
+}
+
+.speaker-img {
+  width: 30%;
+}
+
+.speaker-image {
+  width: 99px;
+  border: 1px solid var(--primary-color); 
+  border-radius: 4px; 
+}
+
+.speaker-info {
+  width: 68%;
+}
+
+.speaker-headline {
+  text-align: center;
+  padding: 2%;
+}
+
+hr {
+  width: 9vw;
+  border-bottom: 2px solid var(--secondary-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  margin-top: 1px;
+}
+
+.position {
+  color: var(--secondary-color);
+}
+
+.line-container {
+  border-bottom: 1px solid var(--secondary-color); 
+  margin: 10px;
+  width: 10%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--base-color);
+  background-color: var(--thirenary-color);
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.footer-partners {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.partners {
+  color: #fff;
+}
+
+.copyright-container {
+  display: flex;
+  gap: 20px;
+  padding: 2%;
+}
+
+.copyright-text {
+   color: var(--thirenary-color);
+  font-size: 0.8em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copyright-text h3 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.copyright-container,
+footer {
+  display: none;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -371,6 +476,34 @@ button.join {
   .see-all {
     border-bottom: 2px solid #fff;
     color: #fff;
+  }
+
+ .speaker-headline {
+    padding: 1%;
+  }
+
+  hr {
+    width: 5vw;
+  }
+
+  .speaker-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 82%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .speaker-items {
+    justify-content: space-around;
+  } 
+
+  .speaker-image {
+    width: 133px;
+  }
+
+  .footer-partners img {
+    width: 100px;
   }
 
 }
