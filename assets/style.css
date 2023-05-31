@@ -734,4 +734,32 @@ footer {
   .second-project {
     margin-top: 1px;
   }
+
+  .top-header {
+    height: 33px;
+    width: 100%;
+    background-color: var(--thirenary-color);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contact-cotainer {
+    display: flex;
+    flex-direction: row;
+    width: 74%;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .contact-item {
+    list-style-type: none;
+    margin: 5px 10px;
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .contact-item a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
