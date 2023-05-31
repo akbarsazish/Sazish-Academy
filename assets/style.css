@@ -27,7 +27,6 @@ body {
    padding: 10px;
 }
 
-
 .top-nave{
   display: grid;
 }
@@ -76,7 +75,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .logo-brand {
@@ -131,7 +130,7 @@ a.nav-link:hover {
 
 .welcome-info {
   padding: 4%;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .welcome-text {
@@ -176,7 +175,6 @@ a.nav-link:hover {
   display: none;
 }
 
-
 /* main program styles strt */
 .main-program {
   background-image: url("images/main-program-img.PNG");
@@ -220,7 +218,6 @@ a.nav-link:hover {
   background-color: rgba(255, 255, 255, 0.3);
  }
  
-
 .program-img {
   width: 60px;
 }
@@ -245,7 +242,6 @@ a.nav-link:hover {
   padding: 33px 5px;
 }
 
-
 button.join {
   border: none;
   color: white;
@@ -267,7 +263,7 @@ button.join {
   width: 100%;
 }
 
-.speaker-items{
+.speaker-items {
   display: flex;
   justify-content: space-between;
   margin: 33px 1px 1px 1px;
@@ -336,6 +332,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .partners {
   color: #fff;
 }
@@ -431,6 +428,7 @@ footer {
   color: var(--secondary-color);
   padding:33px 2px 2px 2px;
 }
+
 .about-academy-goal {
   background-color: var(--primary-color);
   margin: 22px 12px;
@@ -559,7 +557,7 @@ footer {
     text-shadow: var(--thirnary-color) 1px 0px 11px;
   }
 
-  .hamburger, button.join, .toggleButton{
+  .hamburger, button.join, .toggleButton {
     display: none;
   }
   
@@ -607,7 +605,6 @@ footer {
     padding: 1px;
     margin-top: 33px;
     width: 82%;
-   
   }
 
   .program-item {
@@ -669,69 +666,68 @@ footer {
     width: 100px;
   }
 
-.copyright-container,
-footer {
-  display: flex;
-}
+  .copyright-container, footer {
+    display: flex;
+  }
 
 /* about page style */
-.about-info {
-  width: 60%;
-  margin: 0 auto;
-  padding: 3%;
-}
+  .about-info {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3%;
+  }
 
-.about-big-text {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 44px;
-}
+  .about-big-text {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 44px;
+  }
 
-.about-academy-goal {
-  padding: 3%;
-}
+  .about-academy-goal {
+    padding: 3%;
+  }
 
-.about-text {
-  display: none;
-}
+  .about-text {
+    display: none;
+  }
 
-.contat-guid {
-  padding: 3% 3% 1% 3%;
-} 
+  .contat-guid {
+    padding: 3% 3% 1% 3%;
+  } 
 
-.project-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:22px;
-  width: 72%;
-  margin: 0 auto;
-  padding: 4%;
-}
+  .project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:22px;
+    width: 72%;
+    margin: 0 auto;
+    padding: 2%;
+  }
 
-.logo-container {
-  width: 86%;
-  display: grid;
-  margin: 0 auto;
-  padding: 5%;
-}
+  .logo-container {
+    width: 86%;
+    display: grid;
+    margin: 0 auto;
+    padding: 5%;
+  }
 
-.sazish-acadmy-brand {
-  width: 70%;
-  margin: 0 auto;
-}
+  .sazish-acadmy-brand {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-.academy-logo {
-  width: 44%;
-  padding: 4%;
-  margin-top: 22px;
-}
+  .academy-logo {
+    width: 44%;
+    padding: 4%;
+    margin-top: 22px;
+  }
 
-.academy-logo-text {
-  font-size: 56px;
-}
+  .academy-logo-text {
+    font-size: 56px;
+  }
 
-.second-project {
-  margin-top: 1px;
-}
+  .second-project {
+    margin-top: 1px;
+  }
 
 }
