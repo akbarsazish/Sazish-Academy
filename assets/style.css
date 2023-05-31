@@ -149,7 +149,7 @@ a.nav-link:hover {
 .academy-goal {
   padding: 2%;
   width: 98%;
-  border: 3px solid white;
+  border: 6px solid white;
   background-color: #f7f7f8;
   border-radius: 5px;
   color: #000;
@@ -330,7 +330,7 @@ footer {
 .footer-partners {
   padding: 10px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -433,9 +433,9 @@ footer {
 }
 
 .about-academy-goal {
-  background-color: var(--primary-color);
+  background-color: #fff;
   margin: 22px 12px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid #fff;
   padding: 5px;
   margin-top: 33px;
 }
@@ -528,6 +528,12 @@ footer {
   text-align: center;
 }
 
+.top-header,
+.hide-btn {
+  display: none !important;
+}
+
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 18px;
@@ -549,7 +555,7 @@ footer {
     word-spacing: 2px;
     font-variant: small-caps;
     font-weight: bold;
-    text-shadow: #ec5242 1px 1px 11px;
+    text-shadow: #ec5242 1px 2px 5px;
     color: var(--primary-color);
     text-decoration: none;
   }
@@ -761,5 +767,9 @@ footer {
   .contact-item a {
     text-decoration: none;
     color: #fff;
+  }
+
+  .contact-item a:hover {
+    color: var(--secondary-color);
   }
 }

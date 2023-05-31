@@ -9,23 +9,23 @@ hamburger.addEventListener('click', () => {
 const speakerData = [
   {
     id: '1',
-    name: 'Frontend Developer',
+    name: 'Ali Akbar Sazish',
     title: 'Full-Stack Developer',
-    bio: 'pecializes in creating user interfaces and experiences using HTML, CSS, JavaScript, and various front-end frameworks.',
+    bio: 'pecializes in creating user interfaces and experiences, and various front-end frameworks.',
     img: 'assets/images/ali.jpg',
   },
   {
     id: '2',
     name: 'Abdul Ali Noori',
     title: 'Backed Developer',
-    bio: 'Focuses on server-side development, dealing with databases, APIs, and business logic to ensure the smooth functioning of applications.',
+    bio: 'Focuses on server-side development, and business logic to ensure the smooth functioning of applications.',
     img: 'assets/images/nori.jpg',
   },
   {
     id: '3',
     name: 'Jawad Alizadeh',
     title: 'Full-Stack Developer',
-    bio: 'Proficient in both front-end and back-end development, capable of working with both client-side and server-side technologies.',
+    bio: 'Proficient in both front-end and back-end development, capable of working with both side technologies.',
     img: 'assets/images/jawad.jpg',
   },
   {
@@ -39,14 +39,14 @@ const speakerData = [
     id: '5',
     name: 'Jawad Royesh',
     title: 'Mobile App Developer',
-    bio: 'Specializes in developing applications for mobile devices, such as Android, using programming languages like Java or Kotlin.',
+    bio: 'Specializes in developing applications for mobile devices, using programming languages like Java or Kotlin.',
     img: 'assets/images/royesh.jpg',
   },
   {
     id: '6',
     name: 'Eshaq Newton',
     title: 'Data Scientist',
-    bio: 'Analyzes and interprets complex data sets to extract insights and drive decision-making through statistical analysis, and data visualization techniques.',
+    bio: 'Analyzes and interprets complex data sets to extract insights and drive decision-making through statistical analysis.',
     img: 'assets/images/fahimi.jpg',
   },
 ];
