@@ -1,8 +1,5 @@
-
-
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.getElementById('nav-menu');
-
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('mobile-nav');
@@ -57,8 +54,7 @@ const speakerData = [
 const speakerContainer = document.getElementById('speaker-container');
 
 function generateSpeakerCard() {
-  speakerContainer.innerHTML = speakerData.map((speakerObj) => {
-    return `
+  speakerContainer.innerHTML = speakerData.map((speakerObj) => (`
         <div class="speaker-items" id="${speakerObj.id}">
             <div class="speak-img">
                 <img class="speaker-image" src="${speakerObj.img}" alt="speaker image">
@@ -69,17 +65,14 @@ function generateSpeakerCard() {
                 <div class="line-container"></div>
                 <p class="speaker-bio">${speakerObj.bio}</p>
             </div>
-        </div>`;
-  }).join('');
+        </div>`)).join('');
 }
 
 generateSpeakerCard();
 
 // Get the current date and time
-var currentDate = new Date();
-
-var year = currentDate.getFullYear();      
-var month = currentDate.getMonth() + 1;    
-var day = currentDate.getDate();         
-
-document.getElementById("time").innerHTML = year + "-" + month + "-" + day +  " " + "(THU) ~ 16(FRI)"; 
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+const month = currentDate.getMonth() + 1;
+const day = currentDate.getDate();
+document.getElementById('time').innerHTML = `${year}-${month}-${day} (THU) ~ 16(FRI)`;
